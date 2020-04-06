@@ -1,0 +1,576 @@
+@import "font"
+@import "settings"
+
+.header
+	overflow-x: hidden
+	overflow-y: hidden
+
+
+.header-top
+	position: fixed
+	width: 100%
+	margin: auto
+	z-index: 9999
+	background-color: rgba(0,0,0,.1)
+	&_logo
+		font:
+			family: $DamLogo
+			size: 50px
+		padding-top: 11px
+		a
+			display: block
+			text-decoration: none
+			color: $white
+			
+	.navbar
+		padding: 0 !important
+		height: 100%
+		.navbar-nav	
+			.nav-item
+				font-size: 18px
+				font-family: $Light
+				.nav-link
+					display: block
+					text-decoration: none
+					color: $white
+					text-transform: capitalize
+					padding: 42px 27px 17px
+					border-radius: 0 0 6px 6px
+					transition: all .2s
+					&:hover
+						background-color: rgba(255,255,255,.27)
+.header-fix
+	position: fixed
+
+	background-color: rgba(0,0,0,.5)
+.owl-item 
+	position: relative
+	overflow-x: hidden
+	img
+		width: 100vw!important
+		height: 100vh
+
+.owl-bg_desc
+	position: absolute
+	top: 45%
+	left: 26%
+	padding: 34px 44px
+	background-color: $white
+	opacity: .7
+	border-radius: 6px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	.wrap-desc
+		line-height: 1
+		.desc-1
+			font-size: 60px
+			font-family: $Light
+			color: $teaser
+			text-transform: uppercase
+			display: block
+			text-align: end
+		.desc-1_inner
+			@extend .desc-1
+			text-transform: lowercase
+	.desc-2
+		font-size: 60px
+		font-family: $Light
+		color: $teaser
+		text-transform: uppercase
+		display: block
+		text-align: end
+		font-size: 138px
+		font-family: $Black
+		line-height: 114px
+
+.owl-dots
+	position: absolute
+	bottom: 5%
+	left: 50%
+
+.owl-nav
+	display: none!important	// ОТКЛЮЧИЛ СТРЕЛКИ НА СЛАЙДЕРЕ		
+
+
+// ==================================================================================== //
+// ===============================	SERVICES	======================================= //
+
+.headline
+	text-align: center
+	color: $white
+	text-transform: uppercase
+	font-size: 60px
+	font-family: $Light
+	line-height: 58px
+	margin-bottom: 20px
+	&-desc
+		@extend .headline
+		font-size: 20px
+		font-family: $Regular
+		margin-bottom: 0
+		span
+			color: #ec9da2
+
+.content-text
+	text-align: center
+	color: #ffcccc
+	font-size: 14px
+	font-family: $Light
+	line-height: 24px
+	margin-top: 0
+	margin-bottom: 0
+.services-blocks
+	margin-top: 100px
+	// display: -webkit-flex
+	// display: -moz-flex
+	// display: -ms-flex
+	// display: -o-flex
+	// display: flex
+	// flex-wrap: wrap
+	
+	.services-blocks_item		
+		background-color: rgba(0,0,0,.05)
+		margin-right: 20px 
+		text-align: center
+		padding: 44px 25px
+		box-sizing: border-box
+		height: 458px
+		border-radius: 5px
+		&:last-child
+			margin-right: 0	!important
+			&-title
+				font-family: $Light
+				font-size: 30px 
+				color: $white
+				text-transform: uppercase
+			&-descr
+				font-family: $Regular
+				font-size: 14px
+				color: $white			
+		.s-border
+			border: 5px solid $white
+			padding: 6px
+			border-radius: 100%
+			width: fit-content
+			margin: 0 auto
+		.bg-icon
+			background-color: $white
+			border-radius: 100% 
+			width: 120px
+			height: 120px
+			margin: 0 auto
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			img
+				margin: 0 auto
+		
+		.services-blocks_item-title
+			font-family: $Light
+			font-size: 26px
+			text-transform: uppercase
+			color: $white
+			display: block
+			margin-top: 25px
+		
+		.services-blocks_item-descr
+			font-family: $Regular
+			font-size: 14px
+			color: $white
+			line-height: 20px
+			margin-top: 44px
+
+// ======================================================================== //
+// ==============================	ABOUT	=============================== //
+
+
+.meet-the-team
+	font-family: $Black
+	font-size: 25px
+	color: $white
+	padding: 15px 0
+	text-transform: uppercase
+	background-color: #99cc66
+	border-radius: 4px
+	display: block
+	margin: 0 auto
+	max-width: 276px
+	text-align: center
+	margin-top: 42px
+	position: relative
+	&:after
+		content: ''
+		width: 25px
+		height: 25px
+		background-color: #99cc66
+		transform: rotate(45deg)
+		display: block
+		position: absolute
+		left: 46%
+
+.about-blocks
+	margin-top: 73px
+.about-blocks_item
+	margin-right: 20px
+	padding: 43px 0
+	text-align: center
+	background-color: rgba(0,0,0,.2)
+	border-radius: 4px 
+	transition: all .2s
+	&:last-child
+		margin-right: 0
+	&:hover
+		background-color: rgba(0,0,0,.4)
+		cursor: pointer
+		.a-border
+			border: 5px solid #df5c64
+		.about-blocks_item-name
+			color: #fff	
+		.about-blocks_item-works_position
+			color: #df5c64
+		.soc-icon.fs
+			background-color: #4f689e
+		.soc-icon.tw
+			background-color: #74c7d5
+		.soc-icon.gl
+			background-color: #df5c64
+		.soc-icon.in
+			background-color: #3e61af
+	.a-border
+		border: 5px solid #a1859e
+		border-radius: 100% 
+		width: fit-content
+		margin: 0 auto
+		padding: 2px
+		background-color: #fff
+		transition: all .2s
+		img
+			display: block
+	&-name
+		font-family: $Black
+		font-size: 25px
+		color: #a1859e
+		text-transform: uppercase
+		margin-top: 25px
+		transition: all .2s
+	&-works_position
+		font-family: $Light
+		font-size: 14px
+		color: #99cc66
+		margin-top: 18px
+		display: block
+		transition: all .2s
+	&-soc
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		margin-top: 50px
+		padding: 0 35px
+		.soc-icon
+			width: 30px
+			height: 30px
+			border-radius: 100%
+			background-color: #a1859e
+			transition: all .2s
+			i
+				color: $white
+				font-family: fontawesome !important
+				font-style: normal
+				display: block
+				margin-top: 3px
+
+// ======================================================================================== //
+// ==================================	OUR WORK  ========================================= //
+
+.work-text
+	color: $white
+
+.our-work
+	margin-top: 54px
+	.posts
+		border-top: 1px solid #94b963
+		padding-top: 46px
+		margin-top: 30px
+		&-item
+			display: block
+			position: relative
+			border-radius: 5px
+			overflow: hidden
+			margin: 0 20px 30px 0 
+			.inner-plus
+				position: absolute
+				left: 40%
+				top: -20%
+				width: 50px
+				height: 50px
+				border: 3px solid #fff
+				border-radius: 100%
+				transition: all .2s
+				z-index: 9999
+				.line-first
+					height: 2px
+					width: 20px
+					background-color: #fff
+					position: relative
+					top: 50%
+					left: 28%
+				.line-second
+					height: 20px
+					width: 2px
+					top: 25%
+					left: 48%
+					@extend .line-first
+			img
+				vertical-align: middle
+				display: block
+				width: 100%
+				transition: all .2s
+			.dark-down
+				overflow: hidden
+				background-color: rgba(0,0,0,1)
+				border-radius: 5px
+			&_name
+				background-color: #fff
+				text-transform: uppercase
+				text-align: center
+				font-size: 14px
+				font-family: $Regular
+				padding: 18px 0	
+				color: #7a7a7a
+				border-radius: 0 0 5px 5px
+			&:last-child
+				margin-right: 0 
+				border-radius: 5px
+			&:hover
+				cursor: pointer
+				img
+					opacity: .5
+				.inner-plus
+					top: 30%	
+.category
+	border:
+		top: 1px solid #94b963
+
+	padding: 30px 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&-name
+		font-family: $Regular
+		text-transform: uppercase
+		font-size: 20px
+		color: $white
+		margin-left: 18px
+		padding: 0
+
+	&-buttons
+
+		padding: 0
+		.nav-item
+			margin-right: 60px
+			&:last-child
+				margin-right: 0
+			// .tab 
+			// 	display: block
+			// 	font:
+			// 		family: $Regular
+			// 		size: 16px
+			// 	color: $white
+			// 	padding: 10px 9px
+			// 	border-radius: 3px
+			// 	text-transform: capitalize
+			// 	background-color: transparent
+			// 	text-decoration: none
+
+			// 	transition: all .2s
+			// 	&:hover
+			// 		background-color: #f5c149 
+			// 		cursor: pointer
+			// 	&:last-child
+			// 		margin-right: 0
+				
+
+			a.nav-link
+				font:
+					family: $Regular
+					size: 16px
+				color: $white
+				border-radius: 3px
+				text-transform: capitalize
+				transition: all .2s
+				text-transform: capitalize
+				&:hover
+					background-color: #007bff 
+					cursor: pointer
+				&:active
+					background-color: #007bff!important
+				&:focus
+					background-color: #007bff!important	
+// ======================================================================================================= //
+// =====================================	CONTACTS    ==================================================== //
+
+.contacts-info
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	padding: 130px 0 80px 0	
+	.hold
+		.info-name
+			font-family: $Light
+			font-size: 30px
+			color: $white
+			margin: 0 0 24px 0
+		.wrap-address
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+		.contacts
+			// display: flex
+		 //    flex-direction: column
+		 //    justify-content: space-between
+			&-first
+				margin-bottom: 82px
+				.first-name
+					font-family: $Regular 
+					font-size: 20px! important
+					text-transform: capitalize ! important
+					color: rgba(255,255,255,.35)! important
+					margin-bottom: 19px! important
+					line-height: 16.8px
+			.box
+				span
+					display: block
+					font-size: 16px
+					color: $white
+					font-family: $Regular
+				
+			&-second
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				.box-contacts
+					display: inline-block
+					margin-right: 20px
+				.box-contacts:last-child
+					margin-right: 0
+					span
+						display: block
+						font-size: 16px
+						color: $white
+						font-family: $Regular
+						// margin-bottom: 6px		
+					a
+						text-decoration: none
+						color: $white
+						display: block
+					.email
+						a
+							text-decoration: underline		
+		.map
+			display: inline-block
+			height: 261px
+			width: 261px
+			border-radius: 8px
+			overflow: hidden
+			margin-left: 40px
+			iframe
+				display: block
+				height: 100%
+	.main-form
+		width: 545px
+		form
+			text-align: right
+			.form-control
+				display: inline-block
+				max-width: 260px
+				font-family: $Light
+				font-size: 16px
+				background-color: #68a097
+				padding: 14px 20px
+				border-radius: 4px
+				margin-bottom: 20px
+				border-color: transparent
+				outline: none
+				&:focus
+					background-color: #fff
+					color: #68a097
+					outline: 0px !important
+					 -webkit-appearance: none 
+					border-color: transparent !important
+				&:active
+					outline: none
+					border-color: transparent !important	
+			#form1
+				margin-right: 20px
+
+			.textarea
+				@extend .form-control
+				max-width: 100%
+				margin-bottom: 0
+				height: 200px
+			
+			.btn
+				padding: 10px 80px
+				background-color: #df5c64
+				font-family: $Regular
+				font-size: 28px
+				color: #fff
+				border-radius: 6px
+				margin-top: 20px
+				transition: all .2s
+				&:hover
+					background-color: lighten(#df5c64, 5%)
+					cursor: pointer
+				&:focus
+					outline: none
+// ================================================================================================== //
+// ====================================		FOOTER     ============================================== //
+
+footer
+	padding: 40px 0
+	text-align: center
+	.footer-soc
+		display: inline-flex
+		.foot-icon
+			width: 50px
+			height: 50px
+			border-radius: 100%
+			background-color: rgba(255,255,255, .3)
+			display: block
+			text-decoration: none
+			margin-right: 20px
+			transition: all .2s
+			&:last-child
+				margin-right: 0
+			&:hover
+				background-color: rgba(255,255,255, .2)
+			i
+				font-family: fontawesome !important
+				font-style: normal
+				color: #fff
+				display: block
+				font-size: 24px
+				margin-top: 12px
+@import "media"
+
